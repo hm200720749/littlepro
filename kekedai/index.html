@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Examples</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="css/common.css" rel="stylesheet">
+	<link href="css/video-js.min.css" rel="stylesheet">
+	<script type="text/javascript" src='js/jquery1.42.min.js'></script>
+	<script type="text/javascript" src='js/video.min.js'></script>
+	<script type="text/javascript" src='js/jquery.SuperSlide.2.1.1.js'></script>
+</head>
+<body>
+	<!-- 头部 start -->
+	<div class="header">
+		<div class="logo_box">
+			<div class="left">
+				<a href="index.html"><img src="image/logo.png" alt=""></a>
+				<p>全国连锁 · 机构加盟服务</p>
+			</div>
+			<div class="right">
+				<div class="tel">咨询热线：400-020-8881</div>
+			</div>
+		</div>
+		
+	</div>
+	<nav class="nav">
+		<ul>
+			<li class="on"><a href="index.html">首页</a></li>
+			<li><a href="information.html">代理/加盟须知</a></li>
+			<li><a href="income_analy.html">收益分析</a></li>
+			<li><a href="news.html">加盟资讯</a></li>
+			<li><a href="question.html">常见问题</a></li>
+			<li><a href="about_us.html">关于我们</a></li>
+			<li><a href="contact_us.html">联系我们</a></li>
+		</ul>
+	</nav>
+	<script type="text/javascript">
+		var vpath=window.location.pathname;
+		vpath=vpath.split('/')[1];
+		switch (vpath){
+			// 主页
+			case ' ':
+			$('.nav li').eq(0).addClass('on');
+			break;
+			// 加盟须知
+			case 'jmxz':
+			$('.nav li').eq(1).addClass('on');
+			break;
+			case 'sfbz':
+			$('.nav li').eq(1).addClass('on');
+			break;
+			case 'hztj':
+			$('.nav li').eq(1).addClass('on');
+			break;
+			case 'hzlc':
+			$('.nav li').eq(1).addClass('on');
+			break;
+			// 收益
+			case 'syfx':
+			$('.nav li').eq(2).addClass('on');
+			break;
+			case 'qjfx':
+			$('.nav li').eq(2).addClass('on');
+			break;
+			case 'hzys':
+			$('.nav li').eq(2).addClass('on');
+			break;
+			case 'hzzc':
+			$('.nav li').eq(2).addClass('on');
+			break;
+			// 加盟
+			case 'affiliate':
+			$('.nav li').eq(3).addClass('on');
+			break;
+			// 常见问题
+			case 'question':
+			$('.nav li').eq(4).addClass('on');
+			break;
+			// 关于我们
+			case 'about':
+			$('.nav li').eq(5).addClass('on');
+			break;
+			// 联系我们
+			case 'contact':
+			$('.nav li').eq(6).addClass('on');
+			break;
+
+		}
+	</script>
+	<!-- 头部end -->
+	<!-- main start -->
+	<div class="main">
+		<!-- banner start -->
+		<div class="banner">
+			<div class="hd">
+				<div class="next"></div>
+				<div class="prev"></div>
+			</div>
+			<div class="bd">
+				<ul>
+					<li>
+						<a href="">
+							<img src="image/banner1.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="image/banner1.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="image/banner1.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="image/banner1.jpg" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- banner end -->
+		<!-- 视频广告 -->
+		<div class="section_g">
+			<div class="col_three">
+				<a href="" class="blue_c">
+					<h3>项目分析</h3>
+					<p>为中小企业解决融资难题<br/>贷款就是这么简单</p>
+				</a>
+				<a href="information_flow.html" class="blue_c">
+					<h3>我要加盟</h3>
+					<p>提供优质的培训服务<br/>拥有资金提供</p>
+				</a>
+				<div class="blue_c" style="margin-right:0">
+					<h3>在线申请<span class="tip">在线服务时间：9:00~6:00</span></h3>
+					<input type="text" class="join_num" placeholder='请填写您的联系电话'>
+					<input type="submit" class="sub_button" value="提交电话">
+				</div>
+			</div>
+			<!-- video -->
+			<div class="video_box">
+				<img src="image/video_left.jpg" alt="" class="video_mdu">
+				<div class="video_tip">
+					<h3>一起了解客客贷？</h3>
+					<p>客客贷是众联贷注册品牌。众联贷（www.zldai.com）是一家专业的互联网金融信息服务平台（简称：众联贷金服）。<br>众联贷是国内领先的互联网金融信息服务平台，以“安全”为第一服务标准，首创A2I模式，并融合P2P优点，形成独特、先进的双擎运营模式。众联贷专注于资产抵押/质押贷款，并布局全国联网的线下服务体系，致力打造互联网金融行业新标杆。</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="pop_tc_box">
+			<span class="close_ic"></span>
+			<video id="my-video" class="video-js vjs-white-skin vjs-big-play-centered" controls width="1200" preload="auto" data-setup='{}' >
+			 	<source src="video/guanggao.mp4" type='video/mp4' />
+			  <p class="vjs-no-js">
+			  您的浏览器不支持播放！
+			  </p>
+			</video>
+		</div>
+		<!-- 视频广告 end -->
+		<div class="section_w">
+			<div class="col_five">
+				<div class="content">
+					<span class="icon one"></span>
+					<div class="icon_tip_title">我的行业</div>
+					<div class="icon_tip_text">引领中国经济的金融产业</div>
+				</div>
+				<div class="content">
+					<span class="icon two"></span>
+					<div class="icon_tip_title">了解我们</div>
+					<div class="icon_tip_text">以安全为第一服务标准</div>
+				</div>
+				<div class="content">
+					<span class="icon three"></span>
+					<div class="icon_tip_title">业务种类</div>
+					<div class="icon_tip_text">解决中小企业融资难题</div>
+				</div>
+				<div class="content">
+					<span class="icon four"></span>
+					<div class="icon_tip_title">商业模式</div>
+					<div class="icon_tip_text">互联网金融理财模式</div>
+				</div>
+				<div class="content">
+					<span class="icon five"></span>
+					<div class="icon_tip_title">风险控制</div>
+					<div class="icon_tip_text">专业的风控评估与培训</div>
+				</div>
+			</div>
+		</div>
+		<!-- 合作发展 -->
+		<div class="section_g">
+			<div class="cooper_box pub_box">
+				<h3>合作发展优势</h3>
+				<div class="cooper_three">
+					<div class="cont">
+						<h4>合作 加盟商</h4>
+						<ul>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+						</ul>
+					</div>
+					<div class="cont">
+						<h4>合作 加盟商</h4>
+						<ul>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+						</ul>
+					</div>
+					<div class="cont" style="border:none">
+						<h4>合作 加盟商</h4>
+						<ul>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+							<li>●   为加盟商提供专业的风控培训</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 加盟流程 -->
+		<div class="section_w">
+			<div class="flow_box pub_box">
+				<h3>合作加盟流程</h3>
+				<div class="other_title">帮您快速加盟</div>
+				<div class="flow_pic_ground">
+					<img src="image/flow.png" alt="">
+					<ul>
+						<li>填写资料</li>
+						<li>咨询客服</li>
+						<li>提交证件</li>
+						<li>签署合同</li>
+						<li>完成加盟</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="section_g">
+			<div class="pub_box">
+			<!-- 盈利分析 -->
+			<div class="gains_box overflow">
+				<h3 class="pub_h3_css">盈利分析<span>- profit Analysis -</span></h3>
+				<div class="cont_three">
+					<h4>最低盈利分析</h4>
+					<p>以每个月做1000万业务为例，一年收入200万....</p>
+				</div>
+				<div class="cont_three">
+					<h4>中等盈利分析</h4>
+					<p>以每个月做1000万业务为例，一年收入200万....</p>
+				</div>
+				<div class="cont_three">
+					<h4>最高盈利分析</h4>
+					<p>以每个月做1000万业务为例，一年收入200万....</p>
+				</div>
+			</div>
+			<!-- 加盟保障 -->
+			<div class="joins_box overflow">
+				<h3 class="pub_h3_css">加盟保障<span>- Join security -</span></h3>
+				<div class="cont_three">
+					<h4>公司支持</h4>
+					<ul>
+						<li>1、全面复制“众联贷”商业模式以及规范的操作流程</li>
+						<li>2、总部提供多方位广告支持</li>
+						<li>3、总部提供全方位的经营指导</li>
+						<li>4、总部提供全方位合同与格式文档支持</li>
+						<li>5、提供全面、立体式的实际操作与经营管理培训支持</li>
+						<li>6、提供店面设计参考意见以及开业前专人上门指导</li>
+						<li>7、全方位的客户资源整合，加盟商资源对接</li>
+					</ul>
+				</div>
+				<div class="cont_three">
+					<h4>风控运营</h4>
+					<ul>
+						<li>1、中介服务违规操作带来的政策风险</li>
+						<li>2、中介审查不严、手续不全放贷风险</li>
+						<li>3、中介中对借贷双方的规范不严带来的违法风险</li>
+						<li>4、借方诚信带来的社会责任风险</li>
+						<li>5、民间借贷服务机构要为出借人资金安全着想</li>
+					</ul>
+				</div>
+				<div class="cont_three">
+					<h4>十大共享</h4>
+					<ul>
+						<li>1、共享“众联贷”品牌及注册商标使用</li>
+						<li>2、共享“众联贷”独特且成熟的运营管理体系</li>
+						<li>3、共享“众联贷”加盟区域内的业务分成机制</li>
+						<li>4、共享“众联贷”加盟商之间的资源对接和整合</li>
+						<li>5、共享“众联贷”全国出借方资源</li>
+						<li>6、共享总部独特的风险评估与风险控制机制</li>
+						<li>7、共享总部全国高端媒体广告</li>
+						<li>8、共享总部常年的业务创新</li>
+						<li>9、由总部统一安排学习培训</li>
+						<li>10、由总部指派专员指导加盟商稳健经营</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 常见问题 left -->
+			<div class="question_box overflow">
+				<h3 class="pub_h3_css">常见问题<span>- Common problem -</span></h3>
+				<div class="cont">
+					<img src="image/question.jpg" alt="">
+					<a href="news_article.html">如何判断自己适不适合做民间借贷加盟...</a>
+					<a href="news_article.html">如何选择一家正规的民间借贷加盟公司</a>
+					<a href="news_article.html">加盟民间借贷公司需要做哪些准备？</a>
+					<a href="news_article.html">为什么要做民间金融超市加盟连锁？有...</a>
+					<a href="news_article.html">怎么选择金融中介公司加盟品牌？</a>
+					<a href="news_article.html">加盟金融中介公司好做吗？优势有哪些...</a>
+				</div>
+			</div>
+			<!-- 加盟资讯 right -->
+			<div class="news_join_box overflow">
+				<h3 class="pub_h3_css">加盟资讯<span>- Affiliate information -</span></h3>
+				<div class="cont">
+					<img src="image/information.jpg" alt="">
+					<div class="left">
+						<a href="news_article.html">民间借贷加盟 运营模式是主线<span class="span">2017/2/9</span></a>
+						<a href="news_article.html">民间借贷加盟 运营模式是主线<span class="span">2017/2/9</span></a>
+						<a href="news_article.html">民间借贷加盟 运营模式是主线<span class="span">2017/2/9</span></a>
+						<a href="news_article.html">民间借贷加盟 运营模式是主线<span class="span">2017/2/9</span></a>
+						<a href="news_article.html">民间借贷加盟 运营模式是主线<span class="span">2017/2/9</span></a>
+						<a href="news_article.html">民间借贷加盟 运营模式是主线<span class="span">2017/2/9</span></a>
+					</div>
+					<div class="right">
+						<a href="news_article.html">民间借贷加盟 运营模式是主线<span class="span">2017/2/9</span></a>
+						<a href="news_article.html">民间借贷加盟 运营模式是主线<span class="span">2017/2/9</span></a>
+						<a href="news_article.html">民间借贷加盟 运营模式是主线<span class="span">2017/2/9</span></a>
+						<a href="news_article.html">民间借贷加盟 运营模式是主线<span class="span">2017/2/9</span></a>
+						<a href="news_article.html">民间借贷加盟 运营模式是主线<span class="span">2017/2/9</span></a>
+						<a href="news_article.html">民间借贷加盟 运营模式是主线<span class="span">2017/2/9</span></a>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- 企业荣誉 -->
+		<div class="section_w">
+			<div class="certificate_box pub_box">
+				<h3>企业荣誉证书</h3>
+				<div class="other_title">强大企业资质</div>
+				<div class="img_ground">
+					<div class="hd">
+						<a class="next"></a>
+						<a class="prev"></a>
+					</div>
+					<div class="bd">
+						<ul>
+							<li><a href=""><img src="image/zhengshu1.jpg" alt="信誉企业"></a></li>
+							<li><a href=""><img src="image/zhengshu2.jpg" alt="百强企业"></a></li>
+							<li><a href=""><img src="image/zhengshu3.jpg" alt="网站验证单位"></a></li>
+							<li><a href=""><img src="image/zhengshu4.jpg" alt="诚信龙头单位"></a></li>
+							<li><a href=""><img src="image/zhengshu5.jpg" alt="电子商务推进中心"></a></li>
+							<li><a href=""><img src="image/zhengshu6.jpg" alt="中国互联网电子商务优秀企业奖"></a></li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section_g">
+			<div class="pub_box">
+			<!-- 加盟须知 left -->
+			<div class="information_box overflow">
+				<h3 class="pub_h3_css">代理/加盟须知<span>- Join Notice -</span></h3>
+				<div class="cont_box">
+					<a href="information.html">代理收费标准</a>
+					<a href="information_condition.html">代理合作条件</a>
+					<a href="information_flow.html">代理操作流程</a>
+				</div>
+			</div>
+			<!-- 申请合作 right -->
+			<div class="application_box overflow">
+				<h3 class="pub_h3_css">申请合作<span>- Application cooperation -</span></h3>
+				<div class="cont">
+					<div class="left">
+						<div class="tel">招商电话：400-020-8881</div>
+						<div class="add overflow"><p>公司地址：</p><p>广州市海珠区万盛围<br/>保利叁悦广场C塔11层</p></div>
+						<div class="eml">电子邮箱：wr@zldai.com</div>
+						<img src="image/map.jpg" alt="公司地图">
+					</div>
+					<div class="right">
+						<form action="" id="mes_board">
+							<div class="content overflow">
+								<div class="pro_name">真实姓名：</div>
+								<input type="text" class="pro_val">
+							</div>
+							<div class="content overflow">
+								<div class="pro_name">联系电话：</div>
+								<input type="text" class="pro_val">
+							</div>
+							<div class="content overflow">
+								<div class="pro_name">电子邮箱：</div>
+								<input type="text" class="pro_val">
+							</div>
+							<div class="content overflow">
+								<div class="pro_name">居住地址：</div>
+								<input type="text" class="pro_val">
+							</div>
+							<div class="content overflow" style="height:100px">
+								<div class="pro_name">留言内容：</div>
+								<textarea name="" id="" cols="20" rows="4" class="pro_val"></textarea>
+							</div>
+							<div class="btn_box">
+								<input type="submit" class="sub_btn" value="提交信息">
+								<input type="reset" class="sub_btn yel" value="重新填写">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- 合作机构 -->
+			<div class="cooper_org_box">
+				<h3 class="pub_h3_css">合作机构<span>- Cooperative organization -</span></h3>
+				<div class="org_scroll">
+					<div class="bd">
+						<ul>
+							<li><a href=""><img src="image/bank_ms.jpg" alt=""></a></li>
+							<li><a href=""><img src="image/bank_ms.jpg" alt=""></a></li>
+							<li><a href=""><img src="image/bank_ms.jpg" alt=""></a></li>
+							<li><a href=""><img src="image/bank_ms.jpg" alt=""></a></li>
+							<li><a href=""><img src="image/bank_ms.jpg" alt=""></a></li>
+							<li><a href=""><img src="image/bank_ms.jpg" alt=""></a></li>
+							<li><a href=""><img src="image/bank_ms.jpg" alt=""></a></li>
+							<li><a href=""><img src="image/bank_ms.jpg" alt=""></a></li>
+							<li><a href=""><img src="image/bank_ms.jpg" alt=""></a></li>
+							<li><a href=""><img src="image/bank_ms.jpg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- main end -->
+	<!-- foot -->
+	<div class="footer">
+		<div class="pub_box">
+			<div class="foot_nav">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="index.html#mes_board">留言板</a></li>
+					<li><a href="contact_us.html">联系我们</a></li>
+					<li><a href="question.html">常见问题</a></li>
+					<li><a href="news.html">加盟资讯</a></li>
+					<li><a href="information_ens">加盟保障</a></li>
+					<li><a href="income_analy.html">收益分析</a></li>
+					<li><a href="information_flow.html">加盟流程</a></li>
+					<li><a href="about_us.html">关于我们</a></li>
+				</ul>
+			</div>
+			<div class="web_link_box">
+				<span>友情链接：</span>
+				<a href="https://www.we.com/">人人贷 </a>
+				<a href="">理财论坛 </a>
+				<a href="">CCTV证券资讯 </a>
+				<a href="">融360理财 </a>
+				<a href="">酷基金论坛 </a>
+				<a href="">微百科 </a>
+			</div>
+			<div class="copyright_box">
+				<span>Copyright Reserved 2015  众联贷版权所有</span><a href="">粤ICP备15057505号-1</a><span>版权所有</span><span>资讯热线：400-020-8881</span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var win_width=$(window).width();
+			$('.banner li a').width(win_width);
+			$(window).resize(function(event) {
+				win_width=$(window).width();
+				$('.banner li a').width(win_width);
+				jQuery(".banner").slide({mainCell:".bd ul",effect:"left",interTime:5000,autoPlay:true,vis:1,trigger:"click"});
+			});
+			$('.video_mdu').click(function(){
+				$('.pop_tc_box').show();
+				var myPlayer = videojs('my-video');
+				myPlayer.play();
+			});
+			$('.close_ic').click(function(){
+				$('.pop_tc_box').hide();
+				var myPlayer = videojs('my-video');
+				myPlayer.pause();
+				
+			})
+			jQuery(".banner").slide({mainCell:".bd ul",effect:"left",interTime:5000,autoPlay:true,vis:1,trigger:"click"});
+			jQuery(".org_scroll").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:6,interTime:50,trigger:"click"});
+			jQuery(".certificate_box .img_ground").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:4,trigger:"click",scroll:2});
+			
+		})
+		
+	</script>
+</body>
+</html>
