@@ -1,0 +1,32 @@
+{
+  "list":[
+    {
+      "productId":1,
+      "productName":"打火机",
+      "productPrice":"5.00",
+      "productCount":4,
+      "isDefault":false
+    },
+    {
+      "productId":2,
+      "productName":"鼠标",
+      "productPrice":"75.00",
+      "productCount":1,
+      "isDefault":true
+    },
+    {
+      "productId":3,
+      "productName":"阿迪达斯",
+      "productPrice":"999.00",
+      "productCount":2,
+      "isDefault":false
+    },
+    {
+      "productId":4,
+      "productName":"ipad Air",
+      "productPrice":"2688.00",
+      "productCount":1,
+      "isDefault":false
+    }
+  ]
+}
